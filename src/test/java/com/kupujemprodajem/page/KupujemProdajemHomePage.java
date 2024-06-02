@@ -95,7 +95,7 @@ public class KupujemProdajemHomePage extends BaseTest {
     }
 
     public boolean brojRezultataVeciOdHiljadu(){
-        wdWait.until(ExpectedConditions.elementToBeClickable(brojRezultataElement));
+        wdWait.until(ExpectedConditions.visibilityOf(brojRezultataElement));
         return izvuciBrojIProveriDaLiJeVeciOdHiljadu(brojRezultataElement.getAttribute("outerHTML"));
 
     }
